@@ -1,0 +1,564 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="Css/bootstrap.min.css">     
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">     
+         <!--slider  -->
+         <!-- Sertakan Swiper CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+        <style>
+            body{
+                padding-top: 56px;
+            }
+            .jumbotron
+            {
+                text-shadow: #000 1px 1px;
+            }
+            .background-header
+            {
+                background-image: url("images/banner2.jpg");
+                background-color: #fafbfc;
+                height: 400px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size:cover;
+                position:relative;
+            }
+            .button-primer
+            {
+                background-color: #00bd8e;
+                border-color: #0b9b6b;
+                color:#fff;
+                text-shadow: 0px 0px;
+            }
+            .button-primer:hover
+            {
+                background-color: #038c6a;
+                color: #fff;
+                text-shadow: 0px 0px;
+
+            }
+            .container-fluid-max 
+            {
+                    max-width: 1440px;
+            }
+            .service-style
+            {
+                margin-top: 15px;
+                background-color: transparent;
+            }
+            .text-green
+            {
+                color:#0b9b6b;
+            }
+            .bg-red
+            {
+                background-color: #f25757;
+            }
+            h2:before,
+            h2:after 
+            {
+                background-color: #0b9b6b;
+                content: "";
+                display: inline-block;
+                height: 1px;
+                position: relative;
+                vertical-align: middle;
+                width: 25%;
+            }
+            h2:before 
+            {
+                right: 0.5em;
+                margin-left: -50%;
+            }
+            h2:after 
+            {
+                left: 0.5em;
+                margin-right: -50%;
+            }
+            .button-sekunder
+            {
+                background-color: transparent;
+                border-color: #dbdbdb;
+                color:#0b9b6b;
+            }
+            .button-sekunder:hover
+            {
+                    background-color: #0b9b6b;
+                    border-color: #dbdbdb;
+                    color:#fff;
+            }
+            .cover 
+            {
+                    background: no-repeat center/cover;
+            }
+      
+           .btn-estetik {
+              border-radius: 25px;
+              transition: background-color 0.3s ease, color 0.3s ease;
+            }
+            .btn-estetik:hover {
+              background-color: #07621c;
+              color: #fff;
+            }
+  
+        </style>
+        
+    
+    </head>
+    <body>
+        <!--Navigasi bar-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <!-- logo -->
+                <a class="navbar-brand">
+                    <img src="images/graduation-hat.png" alt="Your Logo" height="30">
+                </a>
+                <!-- logo end -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                </button>  
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#platform">Platform</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#matakuliah">Matakuliah</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+  <!-- Header -->
+<section class="jumbotron jumbotron-fluid background-header">
+    <div class="container-fluid text-center">
+      <h1 class="display-3" style="color:aliceblue;">Modul Pembelajaran</h1>
+      <p class="lead" style="font-weight: bold; color:#fff;">
+        Menyediakan modul, ebook, jurnal, dan referensi lainnya untuk kebutuhan belajar mahasiswa
+      </p>
+
+      <!-- Search Bar -->
+      <div class="input-group input-group-lg mt-4 w-50 mx-auto">
+        <input 
+          type="text" 
+          class="form-control" 
+          placeholder="Cari modul..." 
+          aria-label="Search" 
+          aria-describedby="search-addon"
+          id="searchInput"
+        >
+        <button 
+          class="btn btn-success px-4 ms-2" 
+          type="button" 
+          id="searchButton">
+          Cari
+        </button>
+      </div>
+    </div>
+  </section>
+  
+         <!-- platform -->
+<section id="platform" class="service-style container-fluid container-fluid-max">
+    <div class="row text-center">
+      <div class="col-12 pb-4">
+        <h2 class="display-4 text-center mb-5" style="margin-top: 4rem!important;">Platform pendukung</h2>
+      </div>
+  
+      <!-- Duolingo -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <span class="fa-stack fa-2x">
+          <i class="fas fa-circle fa-stack-2x text-green"></i>
+          <i class="fas fa-language fa-stack-1x text-white"></i>
+        </span>
+        <h3>Duolingo</h3>
+        <p>Platform untuk melatih pemahaman berbahasa inggris.</p>
+        <a href="https://www.duolingo.com/" class="btn btn-outline-success btn-estetik mt-2" target="_blank">Buka</a>
+      </div>
+  
+      <!-- Google Scholar -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <span class="fa-stack fa-2x">
+          <i class="fas fa-circle fa-stack-2x text-green"></i>
+          <i class="fas fa-book fa-stack-1x text-white"></i>
+        </span>
+        <h3>Google Scholar</h3>
+        <p>Kumpulan referensi terkait berbagai jurnal serta artikel.</p>
+        <a href="https://scholar.google.com/" class="btn btn-outline-success btn-estetik mt-2" target="_blank">Buka</a>
+      </div>
+  
+     <!-- Figma -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <span class="fa-stack fa-2x">
+          <i class="fas fa-circle fa-stack-2x text-green"></i>
+          <i class="fab fa-figma fa-stack-1x text-white"></i>
+        </span>
+        <h3>Figma</h3>
+        <p>Prototyping serta desain aplikasi.</p>
+        <a href="https://www.figma.com/" class="btn btn-outline-success btn-estetik mt-2" target="_blank">Buka</a>
+      </div>
+  
+      <!-- Dart -->
+      <div class="col-12 col-sm-6 col-lg-3">
+        <span class="fa-stack fa-2x">
+          <i class="fas fa-circle fa-stack-2x text-green"></i>
+          <i class="fas fa-code fa-stack-1x text-white"></i> 
+        </span>
+        <h3>Dart</h3>
+        <p>Akses cepat terminal dart untuk kepentingan pembelajaran mobile programming.</p>
+        <a href="https://dartpad.dev/" class="btn btn-outline-success btn-estetik mt-2" target="_blank">Buka</a>
+      </div>
+  
+  
+        <!--matakuliah-->
+        <section id="matakuliah" class="container">
+            <div class="row text-center">
+                <div class="col-12 pb-4">
+                    <h2 class="display-4 text-center mb-5" style="margin-top: 4rem!important;">Modul matakuliah</h2>
+                 </div>
+                 <div class="col-md-4 mb-4">
+                    <div class="card" id="bahasa-inggris-teknik">
+                        <img class="card-img-top" style="max-height:400px" src="images/img1.png" alt ="Product 1">
+                        <div class="card-body">
+                            <h4 class="card-title">Bahasa inggris teknik</h4>
+                           <p class="card-text">Untuk memajukan sumber daya manusia dengan pemahaman terkait berbahasa inggris terhadap tantangan global.</p>
+                           </div>
+                         <div class="card-footer">
+                                <a href="#" class="btn button-sekunder">Lihat &raquo;</a>
+                         </div>
+                    </div>
+                 </div>
+                
+                 <div class="col-md-4 mb-4">
+                    <div class="card" id="mikrokontroler">
+                        <img class="card-img-top" style="max-height:400px" src="images/img2.png" alt ="Product 1">
+                        <div class="card-body">
+                            <h4 class="card-title">Mikrokontroler</h4>
+                            <p class="card-text">Membahas hal-hal terkait IOT dan sistem tertanam.</p>
+                        </div>
+                        <div class="card-footer">
+                                <a href="#" class="btn button-sekunder">Lihat &raquo;</a>
+                        </div>
+                    </div>
+                 </div>
+
+                 <div class="col-md-4 mb-4">
+                  <div class="card" id="administrasi-jaringan">
+                      <img class="card-img-top" style="max-height:400px" src="images/img2.png" alt ="Product 1">
+                      <div class="card-body">
+                          <h4 class="card-title">Administrasi jaringan</h4>
+                          <p class="card-text">Membahas hal-hal terkait IOT dan sistem tertanam.</p>
+                      </div>
+                      <div class="card-footer">
+                              <a href="#" class="btn button-sekunder">Lihat &raquo;</a>
+                      </div>
+                  </div>
+               </div>
+
+               <div class="col-md-4 mb-4">
+                <div class="card" id="basis-data">
+                    <img class="card-img-top" style="max-height:400px" src="images/img2.png" alt ="Product 1">
+                    <div class="card-body">
+                        <h4 class="card-title">Basis data</h4>
+                        <p class="card-text">Membahas hal-hal terkait IOT dan sistem tertanam.</p>
+                    </div>
+                    <div class="card-footer">
+                            <a href="#" class="btn button-sekunder">Lihat &raquo;</a>
+                    </div>
+                </div>
+             </div>
+
+             <div class="col-md-4 mb-4">
+              <div class="card" id="k3">
+                  <img class="card-img-top" style="max-height:400px" src="images/img2.png" alt ="Product 1">
+                  <div class="card-body">
+                      <h4 class="card-title">K3</h4>
+                      <p class="card-text">Membahas hal-hal terkait IOT dan sistem tertanam.</p>
+                  </div>
+                  <div class="card-footer">
+                          <a href="#" class="btn button-sekunder">Lihat &raquo;</a>
+                  </div>
+              </div>
+           </div>
+
+                 <div class="col-md-4 mb-4">
+                    <div class="card" id="bahasa-indonesia">
+                        <img class="card-img-top" style="max-height:400px" src="images/img3.png" alt ="Product 1">
+                        <div class="card-body">
+                            <h4 class="card-title">Bahasa indonesia</h4>
+                            <p class="card-text">Pembahasan terkait hal-hal penting dalam sebuah penulisan.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn button-sekunder">Lihat &raquo;</a>
+                        </div>
+                    </div>
+                 </div>
+            </div>
+        </section>
+
+
+
+<!-- Section ebook & jurnal -->
+<section id="ebook&jurnal" class="container">
+  <h2 class="display-4 text-center mb-5" style="margin-top: 4rem!important;">Ebook & jurnal</h2>
+  <!-- Swiper Container -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <!-- Slide 1: Bahasa Inggris Teknik -->
+      <div class="swiper-slide">
+        <div class="card">
+          <img class="card-img-top" style="max-height:300px; object-fit: cover;" src="images/img1.png" alt="Bahasa Inggris Teknik">
+          <div class="card-body">
+            <h4 class="card-title">Bahasa Inggris Teknik</h4>
+            <p class="card-text">Memajukan sumber daya manusia melalui pemahaman berbahasa Inggris.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn button-sekunder">Lihat &raquo;</a>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 2: Mikrokontroler -->
+      <div class="swiper-slide">
+        <div class="card">
+          <img class="card-img-top" style="max-height:300px; object-fit: cover;" src="images/img2.png" alt="Mikrokontroler">
+          <div class="card-body">
+            <h4 class="card-title">Mikrokontroler</h4>
+            <p class="card-text">Membahas IOT dan sistem tertanam dengan pendekatan praktis.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn button-sekunder">Lihat &raquo;</a>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 3: Bahasa Indonesia -->
+      <div class="swiper-slide">
+        <div class="card">
+          <img class="card-img-top" style="max-height:300px; object-fit: cover;" src="images/img3.png" alt="Bahasa Indonesia">
+          <div class="card-body">
+            <h4 class="card-title">Bahasa Indonesia</h4>
+            <p class="card-text">Pembahasan mengenai teknik penulisan dan tata bahasa yang tepat.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn button-sekunder">Lihat &raquo;</a>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 3: Bahasa Indonesia -->
+      <div class="swiper-slide">
+        <div class="card">
+          <img class="card-img-top" style="max-height:300px; object-fit: cover;" src="images/img3.png" alt="Bahasa Indonesia">
+          <div class="card-body">
+            <h4 class="card-title">Bahasa Indonesia</h4>
+            <p class="card-text">Pembahasan mengenai teknik penulisan dan tata bahasa yang tepat.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn button-sekunder">Lihat &raquo;</a>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 3: Bahasa Indonesia -->
+      <div class="swiper-slide">
+        <div class="card">
+          <img class="card-img-top" style="max-height:300px; object-fit: cover;" src="images/img3.png" alt="Bahasa Indonesia">
+          <div class="card-body">
+            <h4 class="card-title">Bahasa Indonesia</h4>
+            <p class="card-text">Pembahasan mengenai teknik penulisan dan tata bahasa yang tepat.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn button-sekunder">Lihat ebook &raquo;</a>
+          </div>
+        </div>
+      </div>
+      <!-- Slide 4: Pemrograman Web -->
+      <div class="swiper-slide">
+        <div class="card">
+          <img class="card-img-top" style="max-height:300px; object-fit: cover;" src="images/img4.png" alt="Pemrograman Web">
+          <div class="card-body">
+            <h4 class="card-title">Pemrograman Web</h4>
+            <p class="card-text">Modul dasar-dasar pengembangan web modern.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn button-sekunder">Lihat jurnal &raquo;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Sertakan Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<!-- Inisialisasi Swiper dan custom ping-pong effect -->
+<script>
+  // Inisialisasi Swiper dengan loop OFF
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 4,       // Menampilkan 4 slide sekaligus
+    spaceBetween: 30,        // Jarak antar slide (px)
+    loop: false,             // Nonaktifkan loop bawaan
+    speed: 2000,             // Durasi transisi (ms)
+    allowTouchMove: false,   // Nonaktifkan interaksi manual
+  });
+
+  // Variabel untuk menentukan arah pergerakan: 'next' atau 'prev'
+  var direction = 'next';
+
+  // Interval untuk memindahkan slide setiap 3 detik
+  setInterval(function(){
+    if(direction === 'next'){
+      // Jika telah mencapai slide terakhir, balik arah
+      if(swiper.isEnd){
+        direction = 'prev';
+        swiper.slidePrev();
+      } else {
+        swiper.slideNext();
+      }
+    } else {
+      // Jika telah mencapai slide pertama, balik arah
+      if(swiper.isBeginning){
+        direction = 'next';
+        swiper.slideNext();
+      } else {
+        swiper.slidePrev();
+      }
+    }
+  }, 3000);
+</script>
+
+
+        
+        <!--contact-->
+        <section id="contact" class="container-fluid text-center" style="background-color: #e9f2eb; padding-top: 25px;">
+            <h2 class="display-4 pb-4">Butuh bantuan!</h2>
+            <p class="lead pb-3">Silahkan kirim pesan masukan anda melalui contact whatsapp kami.</p>
+            <a href="#" class="btn button-primer btn-lg mb-4">WhatsApp Kami</a>
+        </section>
+	     
+        <footer class="bg-dark py-4" style="width: 100%; margin: 0; padding: 2rem 0;">
+          <div class="container-fluid px-0">
+              <div class="row no-gutters justify-content-center">
+                  <div class="col-12 text-center mb-3">
+                      <!-- Social Media Icons -->
+                      <div class="social-links">
+                          <a href="#" class="text-light mx-3" aria-label="Facebook">
+                              <i class="fab fa-facebook-f fa-lg"></i>
+                          </a>
+                          <a href="#" class="text-light mx-3" aria-label="Twitter">
+                              <i class="fab fa-twitter fa-lg"></i>
+                          </a>
+                          <a href="#" class="text-light mx-3" aria-label="Instagram">
+                              <i class="fab fa-instagram fa-lg"></i>
+                          </a>
+                      </div>
+                  </div>
+                  
+                  <div class="col-12 text-center">
+                      <!-- Copyright Text -->
+                      <p class="text-muted mb-0">
+                          &copy; <span id="current-year">2020</span> fauzywarow. All rights reserved.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </footer>
+      
+      <style>
+          /* Reset default margins */
+          body, html {
+              margin: 0;
+              padding: 0;
+              width: 100%;
+          }
+          
+          /* Footer Styles */
+          footer {
+              width: 100% !important;
+              left: 0;
+              right: 0;
+              padding: 2rem 0 !important;
+              margin: 0 !important;
+          }
+          
+          .container-fluid {
+              padding-left: 0 !important;
+              padding-right: 0 !important;
+          }
+          
+          .social-links a {
+              transition: all 0.3s ease;
+              display: inline-block;
+              padding: 8px;
+          }
+          
+          .social-links a:hover {
+              color: #00bd8e !important;
+              transform: translateY(-3px);
+          }
+          
+          /* Responsive Adjustments */
+          @media (max-width: 768px) {
+              footer {
+                  padding: 1.5rem 0 !important;
+              }
+              
+              .social-links a {
+                  margin: 0 15px;
+                  padding: 6px;
+              }
+          }
+          
+          @media (max-width: 576px) {
+              footer {
+                  padding: 1rem 0 !important;
+              }
+              
+              .social-links a {
+                  margin: 0 10px;
+                  font-size: 1rem !important;
+              }
+              
+              .social-links a i {
+                  font-size: 1.1rem !important;
+              }
+          }
+      </style>
+      
+      <script>
+          // Update copyright year automatically
+          document.getElementById('current-year').textContent = new Date().getFullYear();
+      </script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+        <script>
+          document.getElementById('searchButton').addEventListener('click', function() {
+              var searchQuery = document.getElementById('searchInput').value.toLowerCase();
+              var cards = document.querySelectorAll('#matakuliah .card');
+              var found = false;
+  
+              cards.forEach(function(card) {
+                  var title = card.querySelector('.card-title').textContent.toLowerCase();
+                  if (title.includes(searchQuery)) {
+                      card.style.display = 'block';
+                      if (!found) {
+                          card.scrollIntoView({ behavior: 'smooth' });
+                          found = true;
+                      }
+                  } else {
+                      card.style.display = 'none';
+                  }
+              });
+  
+              if (!found) {
+                  alert('Modul tidak ditemukan');
+              }
+          });
+      </script>
+  </body>
+  </html>
