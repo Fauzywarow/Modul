@@ -1,0 +1,15 @@
+{
+    "name": "Modul Pembelajaran",
+    "short_name": "Modul",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#4CAF50",
+    "icons": [
+      {
+        "src": "images/graduation-hat.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ]
+  }
