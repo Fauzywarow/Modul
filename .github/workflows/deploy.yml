@@ -12,6 +12,8 @@ permissions:
 
 jobs:
   deploy:
+    environment: # Ini adalah baris yang perlu ditambahkan
+      name: github-pages # Ini adalah baris yang perlu ditambahkan
     runs-on: ubuntu-latest
     
     steps:
