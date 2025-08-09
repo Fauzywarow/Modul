@@ -6,8 +6,9 @@ on:
       - master # Ganti dengan nama branch kamu jika bukan 'master'
 
 permissions:
-  id-token: write
   contents: read
+  pages: write  # Ini adalah baris yang perlu ditambahkan
+  id-token: write
 
 jobs:
   deploy:
@@ -23,9 +24,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Direktori ini berisi file-file yang ingin Anda deploy.
-          # path: './' sudah benar karena file-file Anda di root repositori.
-          path: './' 
+          path: './'
 
       - name: Deploy to GitHub Pages
         id: deployment
