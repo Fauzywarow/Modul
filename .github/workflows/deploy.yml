@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master  # Ganti dengan nama branch kamu jika bukan 'master'
+      - master # Ganti dengan nama branch kamu jika bukan 'master'
 
 permissions:
   id-token: write
@@ -12,10 +12,21 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
+    
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Direktori ini berisi file-file yang ingin Anda deploy.
+          # Pastikan path ini benar, sesuai dengan struktur folder Anda.
+          path: './' # Mengunggah semua file di root repositori
+
       - name: Deploy to GitHub Pages
+        id: deployment
         uses: actions/deploy-pages@v4
